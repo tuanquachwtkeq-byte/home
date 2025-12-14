@@ -45,7 +45,7 @@
             
             /* 修改了这里：从 center top 改为 center 20% */
             /* 这会让图片整体向上走，露出更多下半部分（手部） */
-            background-position: center 20%; 
+            background-position: center 40%; 
             
             z-index: -1;
             filter: brightness(0.7); 
@@ -58,8 +58,8 @@
             margin: 50px auto;
             background: var(--glass-bg);
             /* 修改点2：模糊度从 15px 降为 3px，实现“变淡80%”的效果 */
-            backdrop-filter: blur(3px);
-            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(1px);
+            -webkit-backdrop-filter: blur(1px);
             border: 1px solid var(--glass-border);
             border-radius: 20px;
             padding: 40px;
@@ -350,4 +350,5 @@
     </script>
 </body>
 </html>
+
 
