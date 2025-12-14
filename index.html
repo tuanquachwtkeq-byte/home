@@ -33,18 +33,21 @@
             align-items: center;
         }
 
-        /* 背景图片处理 */
+/* 背景图片处理 */
         .bg-image {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('bg.jpg'); /* 确保你的图片命名为 bg.jpg */
+            background-image: url('bg.jpg'); 
             background-size: cover;
-            background-position: center top;
+            
+            /* 修改了这里：从 center top 改为 center 20% */
+            /* 这会让图片整体向上走，露出更多下半部分（手部） */
+            background-position: center 20%; 
+            
             z-index: -1;
-            /* 保持背景暗度，确保文字清晰 */
             filter: brightness(0.7); 
         }
 
@@ -260,7 +263,7 @@
                 <i class="fas fa-venus-mars"></i> <span>男</span>
             </div>
             <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i> <span>籍贯：重庆 · 九龙坡</span>
+                <i class="fas fa-map-marker-alt"></i> <span>来自：重庆 · 九龙坡</span>
             </div>
             <div class="info-item">
                 <i class="fas fa-location-arrow"></i> <span>现居：湖北 · 武汉</span>
@@ -347,3 +350,4 @@
     </script>
 </body>
 </html>
+
